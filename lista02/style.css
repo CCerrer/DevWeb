@@ -1,0 +1,83 @@
+a {
+    text-decoration: none
+}
+img {
+    border-radius: 50%;
+}
+
+/* Navegação e Publicação */
+a.navegacaoEpublicacao {
+    color: rgb(15,20,25);
+}
+a.navegacaoEpublicacao:hover {
+    background-color: rgba(15,25,20,0.1);
+    border-radius: 25px;
+}
+
+
+/* Estatisticas e Numeros */
+a.estatisticas {
+    color: rgb(15,20,25);
+    font: bold;
+}
+span.letras{
+    color: rgb(83,100,113);
+}
+.underline:hover {
+    text-decoration: underline;
+}
+
+
+/* Ações */
+a.acoes {
+    color: rgb(83,100,113);
+    font: bold;
+}
+#replyShare:hover {
+    background-color: rgba(29,155,240,0.1);
+    color: rgba(29, 155, 240, 1);
+    border-radius: 25px;
+    text-decoration: underline;
+}
+#retzeet:hover {
+    background-color: rgba(0, 186, 124, 0.1);
+    color: rgba(0, 186, 124, 1);
+    border-radius: 25px;
+    text-decoration: underline;
+}
+#like:hover {
+    background-color: rgba(249, 24, 128, 0.1);
+    color: rgba(249, 24, 128, 1);
+    border-radius: 25px;
+    text-decoration: underline;
+}
+
+
+/* Preto */
+.preto {
+    color: rgb(15, 20, 25);
+}
+
+
+/* Cinza */
+.cinza {
+    color: rgb(83, 100, 113);
+}
+
+
+/* inline */
+.inline {
+    display: inline;
+}
+
+
+/* Tzeet */
+.tzeet:hover {
+    background-color: rgba(249, 24, 128, 0.1);
+}
+
+
+/* Seletor de descendência */
+div span {
+    display: inline;
+}
