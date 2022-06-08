@@ -1,0 +1,226 @@
+.preto {
+color: rgb(15, 20, 25);
+}
+.cinza {
+color: rgb(83, 100, 113);
+}
+.tzeet:hover {
+background-color: rgba(0, 0, 0, 0.03);
+}
+.linhazinha {
+max-width: auto;
+}
+
+/* Navegação */
+.navegacao a {
+display: flex;
+color: rgb(15, 20, 25);
+line-height: 45px;
+}
+.navegacao a:hover {
+background-color: rgba(15, 25, 20, 0.1);
+text-decoration: none;
+border-radius: 30px;
+max-width: 70%;
+color: rgb(15, 20, 25);
+}
+
+/* Estatisticas */
+.estatisticas a {
+color: rgb(15, 20, 25);
+font-weight: bold;
+text-decoration: none;
+}
+.estatisticas span {
+color: rgb(83, 100, 113);
+}
+.estatisticas a:hover {
+text-decoration: underline;
+}
+.place a {
+color: rgb(83, 100, 113);
+text-decoration: none;
+}
+.place a:hover {
+color: rgb(83, 100, 113);
+text-decoration: none;
+}
+
+/* Publicacoes */
+.publicacoes a {
+color: rgb(15, 20, 25);
+text-align: center;
+}
+.publicacoes a:hover {
+background-color: rgba(15, 25, 20, 0.1);
+text-decoration: none;
+border-radius: 30px;
+color: rgb(83, 100, 113);
+}
+.align {
+text-align: center;
+background-position: center;
+background: 10%;
+}
+
+/* Acoes */
+.tzeet a {
+color: rgb(83, 100, 113);
+}
+a.reply:hover {
+color: rgba(29, 155, 240, 1);
+text-decoration: none;
+}
+a.reply:hover i {
+background-color: rgba(29, 155, 240, 0.1);
+border-radius: 25px;
+}
+
+a.share:hover {
+color: rgba(29, 155, 240, 1);
+border-radius: 25px;
+text-decoration: none;
+}
+a.share:hover i {
+background-color: rgba(29, 155, 240, 0.1);
+border-radius: 25px;
+}
+
+a.retzeet:hover {
+color: rgba(0, 186, 124, 1);
+border-radius: 25px;
+text-decoration: none;
+}
+a.retzeet:hover i {
+background-color: rgba(0, 186, 124, 0.1);
+border-radius: 25px;
+}
+
+a.like:hover {
+color: rgba(249, 24, 128, 1);
+border-radius: 25px;
+text-decoration: none;
+}
+a.like:hover i {
+background-color: rgba(249, 24, 128, 0.1);
+border-radius: 25px;
+}
+
+.curvo {
+border-radius: 25px;
+}
+
+/* Esquerda */
+.esquerda {
+height: 100vh;
+padding: 20px;
+font-size: 1.2rem;
+}
+
+/* Main */
+.mainContent {
+width: 100%;
+height: 100vh;
+padding: 20px;
+font-size: 1.2rem;
+}
+
+.yellow {color: rgb(255,200,0);}
+.red {color: rgb(255,0,0);}
+
+
+/* Direita */
+.background {
+background-color: rgb(239, 243, 244);
+}
+
+.button {
+background-color: rgb(0, 68, 255) !important;
+color: white !important;
+width: 50% !important;
+}
+
+.profileButton {
+height: 2rem;
+width: 20% !important;
+min-width: 130px !important;
+}
+
+.btn-info {
+background-color: rgb(0, 68, 255) !important;
+color: white !important;
+border: none !important;
+}
+
+.buttonFollow {
+background-color: rgb(0, 68, 255) !important;
+color: white !important;
+width: fit-content !important;
+}
+
+.direita {
+width: 30rem;
+height: 100vh;
+padding: 20px;
+font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+.direita {
+    display: none;
+}
+
+.esquerda div span {
+    display: none;
+}
+}
+@media (min-width: 768px) {
+.esquerda button i {
+    display: none;
+}
+}
+
+/* reply config */
+a.replyConfig:hover {
+background-color: rgb(29, 155, 240);
+border-radius: 25px;
+text-decoration: none;
+}
+
+/* Multimedia */
+a.multimedia:hover {
+background-color: rgb(29, 155, 240);
+border-radius: 25px;
+}
+
+/* add tzeet */
+span.tzeetar:hover i {
+background-color: rgb(29, 155, 240);
+border-radius: 25px;
+}
+
+
+/* flex textarea */
+
+
+/* index configs */
+.displayLeft {
+    float:right;
+}
+
+.block {
+    display: block;
+    width: 90%;
+}
+
+.margin01 {
+    margin-top: 2.5rem;
+}
+.margin02 {
+    margin-top: 2px;
+}
+.margin03 {
+    margin-top: 12px;
+}
+textarea {border:0;outline:0;}
+textarea:focus {outline:none!important;}
