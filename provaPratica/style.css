@@ -1,0 +1,10 @@
+input[type='checkbox'] {
+    width:20px;
+    height:20px;
+}
+
+.my-custom-scrollbar {
+    position: relative;
+    height: 200px;
+    overflow: auto;
+}
