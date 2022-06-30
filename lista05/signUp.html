@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="modal fade bg-dark bg-gradient" id="simpleModal" data-bs-backdrop="static" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Criar conta</h5>
+                    <button type="button" class="btn-close" onclick="window.location.href='signIn.html';" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    
+                    <form action="" id="cadastro">
+                        <div class="form-floating">
+                            <input type="name" class="form-control" id="floatingNameInput">
+                            <label for="floatingNameInput" class="ps-0">Nome:</label>
+                        </div>
+                        <div class="text-danger" id="nameSpace" ></div>
+
+                        <div class="form-floating mt-2">
+                            <input type="email" class="form-control" id="floatingEmailInput">
+                            <label for="floatingEmailInput" class="ps-0">Email:</label>
+                        </div>
+                        <div class="text-danger" id="emailSpace"></div>
+
+                        <div class="form-floating mt-2">
+                            <input type="password" class="form-control" id="floatingPasswordInput">
+                            <label for="floatingPassword" class="ps-0">Senha:</label>
+                        </div>
+                        <div class="text-danger" id="passwordSpace"></div>
+
+                        <div class="form-floating mt-2">
+                            <input type="password" class="form-control" id="floatingRePasswordInput">
+                            <label for="floatingRePassword" class="ps-0">Confirmação da senha:</label>
+                        </div>
+                        <div class="text-danger" id="rePasswordSpace"></div>
+                        
+                        <h6 class="mt-2"><strong>Data de nascimento</strong></h6>
+                        <small>Isso não será exibido publicamente. 
+                            Confirme sua própria idade mesmo se esta conta for de empresa, de um animal de estimação ou outros.</small>
+
+                        <div class="row">
+                            <div class="form-floating mt-2 col-6">
+                                <select name="month" class="form-control" id="month" placeholde="month" onchange="identificarOpcao(this,document.getElementById('day'), 1)">
+                                    <option disabled selected value="0"> </option>
+                                    <option value="1">Janeiro</option>
+                                    <option value="2">Fevereiro</option>
+                                    <option value="3">Março</option>
+                                    <option value="4">Abril</option>
+                                    <option value="5">Maio</option>
+                                    <option value="6">Junho</option>
+                                    <option value="7">Julho</option>
+                                    <option value="8">Agosto</option>
+                                    <option value="9">Setembro</option>
+                                    <option value="10">Outubro</option>
+                                    <option value="11">Novembro</option>
+                                    <option value="12">Dezembro</option>
+                                </select>
+                                <label for="month" class="ps-3">Mês:</label>
+                                <div class="text-danger" id="monthSpace"></div>
+                            </div>
+
+                            <div class="form-floating mt-2 col">
+                                <select name="day" class="form-control" id="day" placeholde="day" onchange="identificarOpcao(document.getElementById('month'), this, 2)">
+                                    <option disabled selected value="0"> </option>
+
+                                </select>
+                                <label for="day" class="ps-3">Dia:</label>
+                                <div class="text-danger" id="daySpace"></div>
+                            </div>
+
+                            <div class="form-floating mt-2 col">
+                                <select name="year" class="form-control" id="year" placeholde="year">
+                                    <option disabled selected value="0"> </option>
+
+                                </select>
+                                <label for="year" class="ps-3">Ano:</label>
+                                <div class="text-danger" id="yearSpace"></div>
+                            </div>
+
+                        </div>  
+
+                        <div class="row mt-2">
+                            <small class="col">Receba e-mails sobre sua atividade no Tzeet e recomendações</small>
+                            <div class="col-1 pe-5 me-3">
+                                <input type="checkbox" name="" id="">
+                            </div>
+                        </div>
+
+                        <div class="mt-1">
+                            <strong>Você concorda com nossos Termos, com a Política de Privacidade e com o uso de Cookies?</strong>
+                        </div>
+                        <input type="radio" id="y" name="radio" onclick="checkButton(true)"> Sim
+                        <input class="ms-2" id="n" name="radio" onclick="checkButton(false)" type="radio"> Não
+
+                        <div class="modal-footer flex-column align-items-stretch">
+                            <button id="signupButton" class="btn btn-primary rounded-pill" type="button" onclick="signup()">Se inscrever</button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <script src="signUp.js"></script>
+</body>
+</html>
